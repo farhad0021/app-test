@@ -44,14 +44,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #3b4456;
+            
             color: rgb(223, 241, 254);
             user-select: none;
             text-decoration: none;
             cursor: pointer;
             margin-right: 12px;
             border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
         }
 
         /* Popup styles */
@@ -109,8 +109,8 @@
         }
 
         .t-img{
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             border-radius: 40px;
             display: inline-block;
             margin-bottom: 3px;
@@ -122,8 +122,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 5px;
-            border: 1px solid rgb(95, 0, 159);
+            
+            
         }
 
         .card-details{
@@ -132,6 +132,7 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
+
             
         }
 
@@ -172,9 +173,9 @@
 .circle {
   position: absolute;
   
-  transform: translateX(3px) translateY(-22px);
-  width: 20px;
-  height: 20px;
+  transform: translateX(3px) translateY(-2px);
+  width: 15px;
+  height: 15px;
 
   &:before {
     content: "";
@@ -242,6 +243,52 @@
     margin-left: 10px;
 }
 
+.line{
+            width: 50px;
+        }
+        .team1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-detail{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid rgb(81, 81, 81);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: #323d54;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        .time{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            border-top: 1px solid #323d54;
+            border-right: 1px solid #323d54;
+            border-left: 1px solid #323d54;
+            background-color: #323d54;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+        }
+
+        .live{
+            color: red;
+            font-weight: bold;
+        }
+
 
     </style>
 </head>
@@ -253,60 +300,74 @@
         <div class="mover" id="slider1">
             <div class="move">
                 <div class="card" data-id="1" data-slider="1">
-                    <p>Bangladesh VS India</p>
-                    <div class="card-details">
-                        <div class="time">
-                            <p>Today</p><p>7:00 AM</p>
-                        </div>
-                        <hr class="hr">
-                        <div class="team">
-                            <div class="team-details">
-                                <div class="team1">
-                                    <img src="https://flagdownload.com/wp-content/uploads/Flag_of_Bangladesh_Flat_Round.png" class="t-img">
-                                    <p>BD</p>
-                                </div>
-                                <div class="team1">
-                                    <img src="https://img.freepik.com/premium-vector/flag-india-round-icon-banner-vector-illustration_622428-10106.jpg?semt=ais_hybrid" class="t-img">
-                                    <p>IND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                        <div class="live">
-                            <div class="circle"></div>
-                            <p>Live</p>
-                        </div>
+
+
+                    <div class="time">
+                        <p>Today</p>
+                        <div class="circle"></div>
+                        <p class="live">LIVE</p>
                     </div>
+                    <div class="card-detail">
+                        <div class="team1">
+                            <p>England</p>
+                            <img src="https://png.pngtree.com/png-clipart/20221229/original/pngtree-england-flag-circle-button-united-kingdom-symbol-png-image_8824542.png" class="t-img">
+                        </div>
+                        <img src="icon/line.png" class="line">
+                        <div class="team1">
+                            <img src="https://media.istockphoto.com/id/1347332330/vector/pakistan-3d-rounded-country-flag-button-icon.jpg?s=170667a&w=0&k=20&c=1S5ntwgS62OQoC5oQRU_g7Ifmlm30_7tLr--EiQOYls=" class="t-img">
+                            <p>Pakistan</p>
+                        </div>
+                    </div> 
+
+
+
                 </div>
                 <div class="card" data-id="2" data-slider="1">
-                    <p>England VS Pakistan</p>
-                    <div class="card-details">
-                        <div class="time">
-                            <p>Today</p><p>10:00 AM</p>
+
+
+                    <div class="time">
+                        <p>Today</p>
+                        <div class="circle"></div>
+                        <p class="live">LIVE</p>
+                    </div>
+                    <div class="card-detail">
+                        <div class="team1">
+                            <p>Bangladesh</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJLKt7BWRIjFtCTU9BebFOvk0G0tSXb09pA&s" class="t-img">
                         </div>
-                        <hr class="hr">
-                        <div class="team">
-                            <div class="team-details">
-                                <div class="team1">
-                                    <img src="https://png.pngtree.com/png-clipart/20221229/original/pngtree-england-flag-circle-button-united-kingdom-symbol-png-image_8824542.png" class="t-img">
-                                    <p>ENG</p>
-                                </div>
-                                <div class="team1">
-                                    <img src="https://media.istockphoto.com/id/1347332330/vector/pakistan-3d-rounded-country-flag-button-icon.jpg?s=170667a&w=0&k=20&c=1S5ntwgS62OQoC5oQRU_g7Ifmlm30_7tLr--EiQOYls=" class="t-img">
-                                    <p>PAK</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                        <div class="live">
-                            <div class="circle"></div>
-                            <p>Live</p>
+                        <img src="icon/line.png" class="line">
+                        <div class="team1">
+                            <img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg" class="t-img">
+                            <p>India</p>
                         </div>
                     </div>
+
+
                 </div>
-                <div class="card" data-id="3" data-slider="1">Card 3</div>
-                <div class="card" data-id="4" data-slider="1">Card 4</div>
-                <div class="card" data-id="5" data-slider="1">Card 5</div>
+                <div class="card" data-id="3" data-slider="1">
+                    
+
+                    <div class="time">
+                        <p>Today</p>
+                        <div class="circle"></div>
+                        <p class="live">LIVE</p>
+                    </div>
+                    <div class="card-detail">
+                        <div class="team1">
+                            <p>World Cup</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/2024_ICC_Women%27s_T20_World_Cup_qualifier_logo.jpg" class="t-img">
+                        </div>
+                        <img src="icon/line.png" class="line">
+                        <div class="team1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/2024_ICC_Women%27s_T20_World_Cup_qualifier_logo.jpg" class="t-img">
+                            <p>World Cup</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card" data-id="4" data-slider="1">Loading...</div>
+                <div class="card" data-id="5" data-slider="1">Loading...</div>
             </div>
         </div>
     </div>
@@ -317,60 +378,54 @@
         <div class="mover" id="slider2">
             <div class="move">
                 <div class="card" data-id="1" data-slider="2">
-                    <p>Premier League</p>
-                    <div class="card-details">
-                        <div class="time">
-                            <p>Today</p><p>7:00 AM</p>
+
+
+
+                    <div class="time">
+                        <p>Today</p>
+                        <div class="circle"></div>
+                        <p class="live">LIVE</p>
+                    </div>
+                    <div class="card-detail">
+                        <div class="team1">
+                            <p>P League</p>
+                            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png" class="t-img">
                         </div>
-                        <hr class="hr">
-                        <div class="team">
-                            <div class="team-details">
-                                <div class="team1">
-                                    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png" class="t-img">
-                                    <p>BD</p>
-                                </div>
-                                <div class="team1">
-                                    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png" class="t-img">
-                                    <p>IND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                        <div class="live">
-                            <div class="circle"></div>
-                            <p>Live</p>
+                        <img src="icon/line.png" class="line">
+                        <div class="team1">
+                            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png" class="t-img">
+                            <p>P League</p>
                         </div>
                     </div>
+
+
+
                 </div>
                 <div class="card" data-id="2" data-slider="2">
-                    <p>LaLiga</p>
-                    <div class="card-details">
-                        <div class="time">
-                            <p>Today</p><p>7:00 AM</p>
+
+
+                    <div class="time">
+                        <p>Today</p>
+                        <div class="circle"></div>
+                        <p class="live">LIVE</p>
+                    </div>
+                    <div class="card-detail">
+                        <div class="team1">
+                            <p>LaLiga</p>
+                            <img src="https://tvs6.github.io/sports_2.0/img/la-liga-2016-2023-logo.png" class="t-img">
                         </div>
-                        <hr class="hr">
-                        <div class="team">
-                            <div class="team-details">
-                                <div class="team1">
-                                    <img src="https://tvs6.github.io/sports_2.0/img/la-liga-2016-2023-logo.png" class="t-img">
-                                    <p>BD</p>
-                                </div>
-                                <div class="team1">
-                                    <img src="https://tvs6.github.io/sports_2.0/img/la-liga-2016-2023-logo.png" class="t-img">
-                                    <p>IND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                        <div class="live">
-                            <div class="circle"></div>
-                            <p>Live</p>
+                        <img src="icon/line.png" class="line">
+                        <div class="team1">
+                            <img src="https://tvs6.github.io/sports_2.0/img/la-liga-2016-2023-logo.png" class="t-img">
+                            <p>LaLiga</p>
                         </div>
                     </div>
+
+                    
                 </div>
-                <div class="card" data-id="3" data-slider="2">Card 3</div>
-                <div class="card" data-id="4" data-slider="2">Card 4</div>
-                <div class="card" data-id="5" data-slider="2">Card 5</div>
+                <div class="card" data-id="3" data-slider="2">Loading...</div>
+                <div class="card" data-id="4" data-slider="2">Loading...</div>
+                <div class="card" data-id="5" data-slider="2">Loading...</div>
             </div>
         </div>
     </div>
